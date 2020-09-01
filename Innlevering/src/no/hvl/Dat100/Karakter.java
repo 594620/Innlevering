@@ -4,11 +4,11 @@ public class Karakter {
 	
 public static void main(String[] args) {
 	
-	for (int k = 1; k <= 10; k++) {
+	for (int k = 1; k <= 2; k++) {
 	String sum = javax.swing.JOptionPane.showInputDialog("Poengsum:");
 	int poeng = Integer.parseInt(sum);
 	
-	if (poeng <= 39) {
+	if (poeng <= 39 && poeng >= 0) {
 		System.out.println("F");
 	}
 	if (poeng >= 40 && poeng <= 49) {
@@ -29,6 +29,9 @@ public static void main(String[] args) {
 	if (poeng >= 90 && poeng <= 100) {
 		System.out.println("A");
 		}
+	if (poeng >= 100 && poeng <= 0 ) {
+		System.out.println("Ugyldig poengsum!");
+	}
 	}
 	}
 
